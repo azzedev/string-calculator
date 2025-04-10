@@ -15,6 +15,7 @@ test.each([
     ["7", 7],
     ["8", 8],
     ["9", 9],
-])('returns %i for "%s"', (input, expected) => {
+    // %i => pour les integer %s pour les strings(% = placeholders)
+])('returns %s for "%i"', (input, expected) => {
     expect(add(input)).toBe(expected);
 });
