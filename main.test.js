@@ -16,6 +16,10 @@ test.each([
     ["8", 8],
     ["9", 9],
     // %i => pour les integer %s pour les strings(% = placeholders)
-])('returns %s for "%i"', (input, expected) => {
+])('returns %i for "%s"', (input, expected) => {
     expect(add(input)).toBe(expected);
+});
+
+test('return 10 for for 2 digits string', () => {
+    expect(add("10")).toBe(10);
 });
