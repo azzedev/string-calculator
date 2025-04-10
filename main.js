@@ -1,5 +1,4 @@
 export function add(numbers){
-    return 6
+    return 0
 }
 
-add("1,2,3")
